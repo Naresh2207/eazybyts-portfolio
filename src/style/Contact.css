@@ -1,0 +1,43 @@
+/* {
+  background-color: antiquewhite;
+}*/
+
+h1 {
+  color: rgb(80, 60, 35);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form > input {
+  height: 30px;
+  border-color: brown;
+  border-radius: 5px;
+}
+form > label {
+  color: brown;
+}
+form > .gender > label {
+  color: brown;
+}
+form > button {
+  color: white;
+  height: 30px;
+  width: 65px;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+}
+a > button {
+  color: white;
+  height: 30px;
+  width: 65px;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  margin-left: 0%;
+  margin-top: 1%;
+}

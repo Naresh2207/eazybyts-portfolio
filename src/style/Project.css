@@ -81,3 +81,19 @@ button {
   color: gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* sample */
+
+
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* On smaller devices, switch direction */
+@media screen and (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+  }
+}

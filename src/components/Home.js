@@ -4,7 +4,8 @@ import "../style/Home.css"; // Make sure this path matches your CSS file
 
 const Home = () => {
   return (
-    <div>
+    
+    <div className="wrap">
       {/* Background */}
       <div className="background"></div>
 

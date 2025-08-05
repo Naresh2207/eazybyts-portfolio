@@ -4,7 +4,7 @@ import "../style/About.css"; // Make sure the path matches your project structur
 
 const About = () => {
   return (
-    <div>
+    <div className="wrap">
       {/* BACK button using Link */}
       <Link to="/">
         <button>BACK</button>

@@ -4,7 +4,8 @@ import "../style/Blog.css"; // Keep your CSS file
 
 const Blog = () => {
   return (
-    <div className="blog">
+    
+    <div className="wrap">
       <div className="header">
         <h1>My Blog</h1>
         <p>Sharing my learning and projects</p>

@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/Home.css"; // Make sure this path matches your CSS file
+import "../style/Home.css";
 
 const Home = () => {
   return (
-    
     <div className="wrap">
       {/* Background */}
       <div className="background"></div>
 
-      {/* Personal */}
+      {/* Personal Section */}
       <div className="personal">
         <img src="/Dark-Black-pfp.jpg" alt="profile pic" />
         <h1>NARESH</h1>

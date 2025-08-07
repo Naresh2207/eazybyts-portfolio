@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/Home.css";
+import "../style/Home.css"; // Make sure this path matches your CSS file
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       {/* Background */}
       <div className="background"></div>
 
-      {/* Personal Section */}
+      {/* Personal */}
       <div className="personal">
         <img src="/Dark-Black-pfp.jpg" alt="profile pic" />
         <h1>NARESH</h1>

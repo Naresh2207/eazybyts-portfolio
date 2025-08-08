@@ -16,12 +16,14 @@ form > input {
   height: 30px;
   border-color: brown;
   border-radius: 5px;
+  width: 228%;
 }
 form > label {
   color: brown;
 }
 form > .gender > label {
   color: brown;
+  margin-left: 0%;
 }
 form > button {
   color: white;
@@ -30,6 +32,7 @@ form > button {
   background-color: green;
   border-radius: 5px;
   border: none;
+  margin-left: 2%;
 }
 a > button {
   color: white;
@@ -39,19 +42,46 @@ a > button {
   border-radius: 5px;
   border: none;
   margin-left: 0%;
+  font-size: 14px;
   margin-top: 0%;
 }
-
-/* sample */
-.wrap {
+.wrapcontact {
+  margin-left: 2%;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 
-/* On smaller devices, switch direction */
-@media screen and (max-width: 768px) {
-  .wrap {
+input:focus {
+  border: 2px;
+  border-style: solid;
+  color: rgb(35, 189, 143);
+  outline: none;
+}
+
+/* mobile resopomnsiver */
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+
+  form > input {
+    width: 100%;
+  }
+
+  .wrapcontact {
     flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  form > button,
+  a > button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
   }
 }

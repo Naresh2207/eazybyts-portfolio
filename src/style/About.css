@@ -19,7 +19,7 @@
 }
 
 .image > img {
-  max-width: 100%;
+  max-width: 200%;
   width: 350px; /* fixed width for consistency */
   height: auto;
   border-radius: 10px;
@@ -58,7 +58,7 @@
 }
 
 /* Back button */
-button {
+ .wrapabout> a >button {
   border-radius: 5px;
   border: none;
   background-color: green;
@@ -72,17 +72,17 @@ button {
 /* Optional responsive tweak — keeps side-by-side but smaller */
 @media screen and (max-width: 768px) {
   .image > img {
-    width: 200px;
+    width: 360px;
   }
 
   .about > h1,
   .about > h2 {
-    font-size: 14px;
+    font-size: 19px;
   }
 
   .about > p,
   .about > ul > li {
-    font-size: 7px;
+    font-size: 9px;
   }
 
   button {
@@ -91,10 +91,12 @@ button {
     font-size: 13px;
   }
 
-  .wrap {
-    height: 50%;
+  .wrapabout {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+   position: relative;
+   bottom: 0%;
+   margin-top: 0%;
   }
 }

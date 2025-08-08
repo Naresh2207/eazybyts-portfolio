@@ -1,10 +1,20 @@
-button {
+/* === Base Styles === */
+
+.wrapproject {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.wrapproject > a > button {
   border-radius: 5px;
   border: none;
   background-color: green;
   color: beige;
   width: 90px;
   height: 30px;
+  margin-bottom: 10px;
 }
 
 .heading {
@@ -20,47 +30,41 @@ button {
   font-size: 35px;
 }
 
-.bdy1 {
-  width: 50%;
-  height: 50%;
-}
-
-.bdy1 > a > button {
-  border-radius: 5px;
-  border: none;
-  background-color: brown;
-  color: beige;
-  width: 90px;
-  height: 30px;
-}
-
 .bdy {
   display: flex;
-
   flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* body1 */
-.bdy1 > img {
-  width: 400px;
-  height: 400px;
-  margin-left: 2%;
+.bdy1,
+.bdy2 {
+  width: 48%;
 }
-.bdy1 > h1 {
+
+.bdy1 > img {
+  width: 100%;
+  height: auto;
+}
+.bdy2 > img {
+  width: 100%;
+  height: auto;
+  margin-top: 23%;
+}
+
+.bdy1 > h1,
+.bdy2 > h1 {
   color: brown;
 }
-.bdy1 > p {
+
+.bdy1 > p,
+.bdy2 > p {
   color: gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* body2 */
 
-.bdy2 {
-  width: 48%;
-  height: 50%;
-  margin-left: 3%;
-}
-
+.bdy1 > a > button,
 .bdy2 > a > button {
   border-radius: 5px;
   border: none;
@@ -68,119 +72,34 @@ button {
   color: beige;
   width: 90px;
   height: 30px;
-}
-.bdy2 > img {
-  width: 291px;
-  height: 400px;
-  margin-right: 2%;
-}
-.bdy2 > h1 {
-  color: brown;
-}
-.bdy2 > p {
-  color: gray;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* sample */
-
-
-
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  margin-top: 10px;
 }
 
-/* On smaller devices, switch direction */
+
+/* === Responsive Styles === */
 @media screen and (max-width: 768px) {
-  .wrap {
+  .bdy {
     flex-direction: column;
+    align-items: center;
   }
 
+  .bdy1,
+  .bdy2 {
+    width: 90%;
+  }
 
+  .heading > h1 {
+    font-size: 28px;
+  }
 
-button {
-  border-radius: 5px;
-  border: none;
-  background-color: green;
-  color: beige;
-  width: 90px;
-  height: 30px;
-}
+  .wrapproject > a > button {
+    /* width: 100%; */
+    font-size: 16px;
+  }
 
-.heading {
-  text-align: center;
-}
-.heading > p {
-  color: gray;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10px;
-}
-.heading > h1 {
-  color: brown;
-  font-size: 35px;
-}
-
-.bdy1 {
-  width: 50%;
-  height: 50%;
-}
-
-.bdy1 > a > button {
-  border-radius: 5px;
-  border: none;
-  background-color: brown;
-  color: beige;
-  width: 90px;
-  height: 30px;
-}
-
-.bdy {
-  display: flex;
-
-  flex-direction: row;
-}
-
-/* body1 */
-.bdy1 > img {
-  width: 400px;
-  height: 400px;
-  margin-left: 2%;
-}
-.bdy1 > h1 {
-  color: brown;
-}
-.bdy1 > p {
-  color: gray;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* body2 */
-
-.bdy2 {
-  width: 48%;
-  height: 50%;
-  margin-left: 3%;
-}
-
-.bdy2 > a > button {
-  border-radius: 5px;
-  border: none;
-  background-color: brown;
-  color: beige;
-  width: 90px;
-  height: 30px;
-}
-.bdy2 > img {
-  width: 291px;
-  height: 400px;
-  margin-right: 2%;
-}
-.bdy2 > h1 {
-  color: brown;
-}
-.bdy2 > p {
-  color: gray;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-
+  .bdy1 > a > button,
+  .bdy2 > a > button {
+    width: 100%;
+    font-size: 16px;
+  }
 }

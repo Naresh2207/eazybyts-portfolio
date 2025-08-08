@@ -5,7 +5,7 @@ import "../style/Project.css";
 const Project = () => {
   return (
     <>
-      <div className="wrap">
+      <div className="wrapproject">
         {/* Back Button */}
         <Link to="/">
           <button>Back</button>

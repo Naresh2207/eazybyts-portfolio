@@ -27,12 +27,12 @@ const Contact = () => {
             <br />
 
             <div className="gender">
-              <label>GENDER* :</label>
+              <label>GENDER*:</label>
               <label>Male</label>
               <input type="radio" value="male" name="gender" required />
 
-              <label>Female</label>
-              <input type="radio" value="female" name="gender" required />
+              <label className="fem2">Female</label>
+              <input type="radio" value="female" name="gender" required className="female" />
             </div>
 
             <br />
@@ -41,11 +41,11 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* {
+        {
           <Link to="/">
             <button>BACK</button>
           </Link>
-        } */}
+        }
       </div>
     </>
   );

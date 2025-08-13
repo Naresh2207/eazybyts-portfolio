@@ -76,7 +76,7 @@
 }
 
 
-/* === Responsive Styles === */
+/* Mobile Responsive  */
 @media screen and (max-width: 768px) {
   .bdy {
     flex-direction: column;

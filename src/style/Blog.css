@@ -56,7 +56,7 @@ body {
   flex-direction: column;
 }
 
-/* On smaller devices, switch direction */
+/* mobile responsive */
 @media screen and (max-width: 768px) {
   .wrapblog {
     flex-direction: column;

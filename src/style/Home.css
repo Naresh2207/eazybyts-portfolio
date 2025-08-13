@@ -62,7 +62,7 @@
 }
 
 
-/*  MOBILE RESPONSIVE SECTION  */
+/*  MOBILE RESPONSIVE */
 
 @media screen and (max-width: 768px) {
   .sidebar > ul {
@@ -71,7 +71,7 @@
     top: -16;
     bottom: 0;
     width: 118px;
-    height: 94%;
+    height: 97%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
